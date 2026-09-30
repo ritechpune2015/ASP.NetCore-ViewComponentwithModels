@@ -1,0 +1,20 @@
+﻿@model Book
+<h2> Book Info </h2>
+<table>
+  <thead>
+      <tr>
+          <th> Book ID</th>
+          <th> Book Name </th>
+          <th> Author Name </th>
+          <th> Price </th>
+      </tr>
+  </thead>
+  <tbody>
+          <tr>
+              <td>@Model.BookID</td>
+            <td>@Model.BookName</td>
+            <td>@Model.Author</td>
+            <td>@Model.Price</td>
+          </tr>
+    </tbody>
+</table>

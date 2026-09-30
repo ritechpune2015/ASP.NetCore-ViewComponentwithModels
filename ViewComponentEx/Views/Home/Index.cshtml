@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+    <html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+      <h2> Home Index </h2>
+      @await Component.InvokeAsync("EmpVC")
+      <hr />
+      @await Component.InvokeAsync("ProductListVC", new {pr=(decimal)1000})
+      <hr />
+      <vc:product-list-vc pr="500">
+      </vc:product-list-vc>
+      <hr />
+      @await Component.InvokeAsync("BookVC")
+    </body>
+    </html>
